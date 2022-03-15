@@ -31,7 +31,7 @@ const tx = jateDb.transaction('jate', 'readwrite');
 const store = tx.objectStore('jate');
 
 //use the .put() to update the content
-const request = store.put({content});
+const request = store.put({content, id: 1});
 
 //confirms request
 const result = await request;
