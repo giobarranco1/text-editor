@@ -62,5 +62,4 @@ export const getDb = async () => {
   return result;
 }
 
-
 initdb();
